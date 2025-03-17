@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -13,6 +13,20 @@ header {
     padding: 20px 0;
 }
 
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 10px;
+}
+
 nav {
     margin-top: 10px;
 }
@@ -22,6 +36,11 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffdd57;
 }
 
 section {
@@ -30,30 +49,88 @@ section {
     margin: 20px auto;
     width: 80%;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    border-bottom: 2px solid #007bff;
+    border-bottom: 3px solid #007bff;
     padding-bottom: 5px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.project-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-ul li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+.project-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-out;
+    width: 300px;
+    text-align: center;
+    padding-bottom: 15px;
 }
 
-ul li a {
-    text-decoration: none;
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
     color: #007bff;
-    font-weight: bold;
+    margin: 15px 0 10px;
 }
 
-ul li a:hover {
-    text-decoration: underline;
+.project-card p {
+    padding: 0 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.project-card a:hover {
+    background: #0056b3;
+}
+
+.certification-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.certification-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.certification-info h3 {
+    color: #007bff;
+}
+
+.certification-info p {
+    color: #666;
 }
