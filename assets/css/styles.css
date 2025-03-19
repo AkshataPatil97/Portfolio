@@ -361,6 +361,14 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  justify-content: center; /* Ensures content is centered */
+}
+
+.work__container:has(.work__item:nth-child(1):nth-last-child(1)) {
+  display: flex;
+  justify-content: center;
+  max-width: 316px;
+  max-height: 346px;
 }
 
 .work__item {
