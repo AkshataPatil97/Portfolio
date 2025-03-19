@@ -576,7 +576,9 @@ img {
     max-width: 100%;
     overflow: hidden;
   }
-  
+  .bdgrid {
+    margin: 0px 10px;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -634,11 +636,19 @@ img {
     font-size: 16px;
     padding: 12px 20px;
   }
+
+  .bdgrid {
+    margin: 0px 10px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
+  }
+
+  .bdgrid {
+    margin: 0px 10px;
   }
 
   .section {
@@ -727,7 +737,7 @@ img {
   }
 
   .bdgrid {
-    margin: 10px;
+    margin: 0px 10px;
   }
 
   .home {
