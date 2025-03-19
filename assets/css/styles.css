@@ -367,7 +367,7 @@ img {
 .work__container:has(.work__item:nth-child(1):nth-last-child(1)) {
   display: flex;
   justify-content: center;
-  max-width: 316px;
+  width: auto;
   max-height: 346px;
 }
 
