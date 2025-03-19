@@ -726,6 +726,10 @@ img {
     margin-right: auto;
   }
 
+  .bdgrid {
+    margin: 0px;
+  }
+
   .home {
     padding: 10rem 0 2rem;
   }
